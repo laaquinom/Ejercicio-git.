@@ -1,0 +1,14 @@
+mkdir ejercicio-git
+cd ejercicio-git
+echo "Este es el contenido de fichero1.txt" > fichero1.txt
+git init
+git add fichero1.txt
+git commit -m "Agregar fichero1.txt"
+git log --oneline
+echo "Este es el contenido de fichero2.txt" > fichero2.txt
+git add fichero2.txt
+git commit -m "Agregar fichero2.txt"
+rm fichero1.txt
+git add fichero1.txt
+git commit -m "fichero1.txt eliminado"
+git log --oneline
