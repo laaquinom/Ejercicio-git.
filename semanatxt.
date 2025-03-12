@@ -1,0 +1,17 @@
+cd ejercicio-git
+echo "Lunes" > semana.txt
+git add semana.txt
+git commit -m "Añadir dia de la semana Lunes"
+echo "Martes" >> semana.txt
+git add semana.txt
+git commit -m "Añadir dia de la semana Martes"
+git log --oneline
+echo "Agosto" >> semana.txt
+git add semana.txt
+git commit -m "Agosto"
+git reset --hard HEAD~1
+git log --oneline
+echo "Agosto" > meses.txt
+git add meses.txt
+git commit -m "Agregar meses.txt"
+git log --oneline
